@@ -1,0 +1,82 @@
+/* CSS stylesheet for form.html */
+body{
+	background-color: #4c0202;
+	 border-color: #410505;
+	  font-family: arial, verdana, sans-serif;
+	   max-width: 80em;
+	}
+header{
+	border-color: #410505;
+	 border: 1px solid #410505;
+	    font-size: 2em;
+	     color: #005866;
+	      display: flex;
+	       flex-direction: column;
+	        align-items: top;
+	 }
+img{
+	max-width: 100%;
+	 height: auto;
+	  display: inline-block;
+	}
+h2{
+	font-family: monospace;
+	 font-size: 1em;
+	  align-content: center;
+}
+p{
+	border-color: #410505;
+	 font-size: -1em;
+	  width: 100%;
+	   margin-top: 1em;
+	    color: #005866;
+}
+form{
+	 display: grid;
+	  grid-template-columns: 15em 15em;
+	   grid-gap: 3px;
+	    grid-row-gap: 2em;
+	     border: 2px solid #410505;
+	      box-sizing: border-box;
+	       border-radius: 5px;
+	        color: #005866;
+}
+label{
+	grid-column: 1 / 1;
+	 border: 2px solid #410505;
+	  box-sizing: border-box;
+	   border-radius: 5px;
+	    color: #005866;
+}
+input{
+	grid-column: 2 / 2;
+	 max-width: 20em;
+}
+#status{
+	grid-column: 1 / -1;
+}
+input[type=radio]{
+	grid-column: 1 / -1;
+}
+#skills{
+	grid-column: 1 / -1;
+}
+#disclosures{
+	grid-column: 1 / -1;
+}
+input[type=checkbox]{
+	grid-column: 1 / -1;
+}
+#sponsor{
+	grid-column: 1 / -1;
+}
+option{
+	grid-column: 1 / 1;
+}
+textarea{
+	grid-column: 1 / -1;
+}
+#submit{
+	grid-column: 1.5 / -1;
+	 text-align: center;
+}

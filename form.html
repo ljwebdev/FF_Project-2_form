@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SCP Foundation form 29A
+	</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+	<header>
+
+		<h1>SCP Foundation<img src="images/scplogo.png" alt="scp logo"></h1>
+		<h2>Preemployment Screening Form 29A</h2>
+	</header>
+	<p>
+		Please complete the form in its entirety.  After checking the form for accuracy, <strong>SUBMIT</strong> the form and await contact by a foundation representative.</p>
+	<form action="thankyou.html" method="post">
+		<label for="name" id="name">Name</label>
+		<input type="text" name="txtname" value="" required="required" autofocus="autofocus" placeholder="full name">
+		<label for="email" id="email">email</label>			<input class="inputtxt" type="em" name="txtemail" value="" required="required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="youremail@site.com">
+		<label for="5 digit candidate id number" id="candidate">5 Digit Candidate ID Number</label>
+		<input class="idnumber" type="text" name="idnumber" value="" required="required" placeholder="00000" pattern="[0-9]{5}" title="numbers only" maxlength="5">
+		<label for="select recruitment status" id="status">select recruitment status</label>
+		<div>
+			<input type="radio" id="survivor" name="recruit" value="survivor" required="required">survivor</div>
+		<div>
+			<input type="radio" id="military" name="recruit" value="military" required="required">military</div>
+		<div>
+			<input type="radio" id="law enforcement" name="recruit" value="law-enforcement" required="required">law enforcement</div>
+		<div>
+			<input type="radio" id="government intelligence" name="recruit" value="government-intelligence" required="required">government intelligence</div>
+		<div>
+			<input type="radio" id="Encroaching Dawn Colonist" name="recruit" value="encroaching-dawn-colonist" required="required">Encroaching Dawn Colonist</div>
+		<div>
+			<input type="radio" id="Object/Asset" name="recruit" value="object-asset" required="required">object/asset</div>
+		<div>
+			<input type="radio" id="Other (Visitor)" name="recruit" value="other-visitor" required="required">other visitor</div>
+		<div>
+			<input type="radio" id="Other (human)" name="recruit" value="other-human" required="required">other human</div>
+			    <label id="skills" for="check applicable skills">Skills (check all that apply)</label>
+		<div>
+			<input type="checkbox" id="skill1" name="skill1" value="precognition"> <label for="skill1" class="checkboxtxt">precognition</label></div>
+		<div>
+			<input type="checkbox" id="skill2" name="skill2" value="firearms"> <label for="skill2" class="checkboxtxt">firearms</label></div>
+		<div>
+			<input type="checkbox" id="skill3" name="skill3" value="edged-weapon"> <label for="skill3" class="checkboxtxt">edged weapon</label></div>
+		<div>
+			<input type="checkbox" id="skill4" name="skill4" value="explosives"> <label for="skill4" class="checkboxtxt">explosives</label></div>
+		<div>
+			<input type="checkbox" id="skill5" name="skill5" value="seduction"> <label for="skill5" class="checkboxtxt">seduction</label></div>
+		<div>
+			<input type="checkbox" id="skill6" name="skill6" value="infiltration"> <label for="skill6" class="checkboxtxt">infiltration</label></div>
+		<div>
+			<input type="checkbox" id="skill7" name="skill7" value="sigint"> <label for="skill7" class="checkboxtxt">sigint</label></div>
+		<div>
+			<input type="checkbox" id="skill8" name="skill8" value="CQC"> <label for="skill8" class="checkboxtxt">CQC</label></div>
+		<div>
+			<input type="checkbox" id="skill9" name="skill9" value="botany"> <label for="skill9" class="checkboxtxt">botany</label></div>
+		<div>
+			<input type="checkbox" id="skill10" name="skill10" value="exobiology"> <label for="skill10" class="checkboxtxt">exobiology</label></div>
+		<div>
+			<input type="checkbox" id="skill11" name="skill11" value="emergency-medical"> <label for="skill11" class="checkboxtxt">emergency medical</label></div>			
+		<div>
+			<input type="checkbox" id="skill12" name="skill12" value="social-engineering"> <label for="skill12" class="checkboxtxt">social engineering</label></div>
+		<div>
+			<input type="checkbox" id="skill13" name="skill13" value="occlumency"> <label for="skill13" class="checkboxtxt">occlumency</label></div>
+		<div>
+			<input type="checkbox" id="skill14" name="skill14" value="invulnerability"> <label for="skill14" class="checkboxtxt">invulnerability</label></div>
+		<div>
+			<input type="checkbox" id="skill15" name="skill15" value="other-comment-below"> <label for="skill15" class="checkboxtxt">other-comment below</label></div>
+		<label for="select sponsor" id="sponsor">Select Your Sponsor</label>
+		<select id="sponsor" name="sponsor" required="required">
+				<option value="">--------------------</option>
+				<option value="steve-jackson">Steve Jackson</option>
+				<option value="john-galt">John Galt</option>
+				<option value="ima-keter">Ima Keter</option>
+				<option value="brother-zhakn">Brother Zhakn</option>
+				<option value="sandra-white">Sandra White</option>
+				<option value="vera-garcia">Vera Garcia</option>
+				<option value="ashley-joanna-williams">Ashley Joanna Williams</option>
+			</select>
+			<label id="disclosures" for="disclosures aliases skills">Please use the space below to disclose any aliases, additional skills, or relevant remarks.</label>
+				<textarea name="txtadditional" value="" placeholder="additional comments here"></textarea>
+				<input type="submit" value="SUBMIT" id="submit">
+	</form>	
+
+</body>
+</html>
